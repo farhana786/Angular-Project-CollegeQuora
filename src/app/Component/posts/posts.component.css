@@ -1,0 +1,142 @@
+
+
+.user-profile{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+}
+mat-paginator{
+    margin-top: 1rem;
+}
+
+mat-spinner{
+    margin: auto;
+}
+
+
+
+.user-profile p{
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Cookie', cursive;
+    font-family: 'Irish Grover', cursive;
+    color: rgb(255, 255, 255);
+    animation: Color 4s linear infinite;
+-webkit-animation: Color 4s ease-in-out infinite;
+}
+
+@keyframes Color{
+    0%{
+      color:#2cfae9;
+    }
+    
+    20%{
+      color:#4FC1E9;
+    }
+    
+    100%{
+      color:#9575e6;
+    }
+  }
+  @-moz-keyframes Color{
+    0%{
+      color:#2cfae9;
+    }
+    
+    20%{
+      color:#4FC1E9;
+    }
+    
+    100%{
+      color:#9575e6;
+    }
+  }
+  
+  @-webkit-keyframes Color{
+    0%{
+      color:#2cfae9;
+    }
+    
+    20%{
+      color:#4FC1E9;
+    }
+    
+    100%{
+      color:#9575e6;
+    }
+  }
+
+
+.user-profile h4{
+    font-size: small;
+    color: rgb(255, 254, 254);
+}
+
+.user-profile small{
+    font-size: 12px;
+   
+}
+
+.post-input-container{
+    padding-left: 55px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.post-input-container textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    resize: none;
+  
+
+}
+
+.post-container{
+    width: 100%;
+    background: rgb(0, 0, 0);
+    border-radius: 6px;
+    padding:20px ;
+    color: rgb(255, 255, 255);
+    display:block;
+    margin-top: 3rem ;
+    font-family: 'Anton', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Questrial', sans-serif;
+-webkit-box-shadow: 3px 0px 27px 4px rgba(0,0,0,0.79);
+-moz-box-shadow: 3px 0px 27px 4px rgba(0,0,0,0.79);
+box-shadow: 3px 0px 27px 4px rgba(0,0,0,0.79);
+}
+
+.button1{
+    margin-left: 480px;
+}
+
+.post-text{
+    color:#fff;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+:host{
+    display: block;
+    margin-top: 1rem;
+}
+ 
+.info-text{
+    text-align: center;
+    font-weight: 600;
+    font-size:medium;
+    color: rgb(0, 0, 0);
+}
+
+mat-paginator{
+    background-color: rgb(75, 69, 69);
+    color:white;
+    border-color: white;
+   
+}

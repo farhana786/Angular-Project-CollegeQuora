@@ -1,0 +1,160 @@
+.write-post-container{
+    width: 70%;
+    background: rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 20px;
+    color: #ffffff;
+    margin-left: 220px;
+    margin-top: 200px;
+    position: absolute;
+
+    
+}
+
+.effect8
+{
+  -webkit-box-shadow: 26px 31px 32px 5px rgba(5,5,5,0.84);
+-moz-box-shadow: 26px 31px 32px 5px rgba(5,5,5,0.84);
+box-shadow: 26px 31px 32px 5px rgba(5,5,5,0.84);
+}
+.effect8:before, .effect8:after
+{
+	content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.effect8:after
+{
+	right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.user-profile{
+    display: flex;
+    align-items: center;
+}
+
+
+.user-profile p{
+padding-bottom: 10px;
+ 
+    font-weight: 600;
+    font-family: 'Cookie', cursive;
+    font-family: 'Irish Grover', cursive;
+color:white;
+font-size: 30px;
+animation: Color 4s linear infinite;
+-webkit-animation: Color 4s ease-in-out infinite;
+
+
+}
+
+@keyframes Color{
+  0%{
+    color:#2cfae9;
+  }
+  
+  20%{
+    color:#4FC1E9;
+  }
+  
+  100%{
+    color:#9575e6;
+  }
+}
+@-moz-keyframes Color{
+  0%{
+    color:#2cfae9;
+  }
+  
+  20%{
+    color:#4FC1E9;
+  }
+  
+  100%{
+    color:#9575e6;
+  }
+}
+
+@-webkit-keyframes Color{
+  0%{
+    color:#2cfae9;
+  }
+  
+  20%{
+    color:#4FC1E9;
+  }
+  
+  100%{
+    color:#9575e6;
+  }
+}
+  
+ mat-error{
+    color: skyblue;
+  
+ }
+
+.user-profile small{
+    font-size: 12px;
+
+}
+
+.post-input-container{
+    padding-left: 55px;
+    padding-top: 20px;
+}
+
+.post-input-container textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    resize: none;
+    color:rgb(204, 195, 195);
+    font-family: 'Anton', sans-serif;
+    font-size: medium;
+
+}
+
+.post-container{
+    width: 100%;
+    background:rgb(204, 195, 195);
+    border-radius: 6px;
+    padding:20px ;
+    color: rgb(255, 255, 255);
+    margin: 20px 0;
+    resize: none;
+}
+
+.user-profile span{
+    font-size: 13px;
+    color:#fff;
+
+}
+.post-text{
+    color:rgb(0, 0, 0);
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.add-post-links{
+ 
+  margin-left: 900px ;
+  
+}

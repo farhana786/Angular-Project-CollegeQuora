@@ -1,0 +1,49 @@
+<!-- <mat-card>
+  <mat-spinner *ngIf="isLoading"></mat-spinner>
+  <form  (submit)="onLogin(loginForm)" #loginForm="ngForm" *ngIf="!isLoading">
+    <mat-form-field>
+      <input matInput name="email" ngModel type="email" placeholder="E-Mail" #emailInput="ngModel" required email>
+      <mat-error *ngIf="emailInput.invalid">Please enter a valid email.</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input type="password" name="password" ngModel  matInput placeholder="Password" #passwordInput="ngModel" required>
+      <mat-error *ngIf="passwordInput.invalid">Please enter a valid password.</mat-error>
+    </mat-form-field>
+    <button mat-raised-button color="accent" type="submit" *ngIf="!isLoading">Login</button>
+  </form>
+</mat-card> -->
+<div class="form">
+  <!--login form start-->
+  <form class="login-form" action="" method="post" (submit)="onLogin(loginForm)" #loginForm="ngForm" *ngIf="!isLoading">
+    <i class="fas fa-user-circle"></i>
+      <input name="email" ngModel class="user-input" type="email" placeholder="E-mail" #emailInput="ngModel" required email>
+      <mat-error *ngIf="emailInput.invalid">Please enter a valid email.</mat-error>
+    
+    <input name="password" ngModel class="user-input" type="password"placeholder="Password" #passwordInput="ngModel" required>
+    <mat-error *ngIf="passwordInput.invalid">Please enter a valid password.</mat-error>
+    <input class="btn" type="submit" name="" value="LOGIN" *ngIf="!isLoading">
+    <div class="options-02">
+      <p>Not Registered? <a mat-button routerLink="/signup">Signup Here</a></p>
+    </div>
+  </form>
+  <!--login form end-->
+
+  <br>
+  <br>
+  <a class="b-btn" routerLink="/">
+    College Quora&nbsp;<i class="fa fa-eercast"></i>
+  </a>
+</div>
+<!--form area end-->
+
+<script>
+  $(".options-02 a").click(function () {
+  $("form").animate(
+    {
+      height: "toggle",
+      opacity: "toggle"
+    },
+    "slow"
+  );
+});
+</script>

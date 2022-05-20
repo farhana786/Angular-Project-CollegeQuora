@@ -1,0 +1,39 @@
+
+<mat-spinner *ngIf="isLoading"></mat-spinner>
+<div class="post-container" multi="true" *ngIf="posts.length > 0 && !isLoading" >
+    <div class="post-created" *ngFor="let post of posts">
+    <div class="user-profile">
+        <div>
+            <p>{{post.name}}</p>
+    <!-- {{ myDate | date: 'short' }} -->
+        </div>
+    </div>
+   <!-- <p>{{ newPost }}</p>   -->
+   
+    <div class="post-input-container">
+        <h1>{{post.title}}</h1>
+        <h3>{{ post.content }} </h3>
+         </div>
+         <button style='margin-right:16px' type="button" class="btn btn-dark" [routerLink]="['/edit',post.id]"> Reply </button> 
+         <div class="button1"  *ngIf="userIsAuthenticated && userId=== post.creator">
+         <button style='margin-right:16px' type="button" class="btn btn-danger" (click)="onDelete(post.id)"> Delete </button>
+        </div>
+        <!-- <hr>
+        <div class="post-input-container">
+            <textarea rows="2" placeholder="Reply to this query"></textarea>
+            <div class="add-post-links">
+                <button 
+                 type="submit"
+                 class="btn btn-dark"> 
+                 Reply </button> 
+            </div>
+        </div>  -->
+               <hr>
+               
+       
+          </div>
+          
+</div>
+<mat-paginator [length]="totalPosts" [pageSize]="postsPerPage" [pageSizeOptions]="pageSizeOptions" (page)="onChangedPage($event)" *ngIf="posts.length > 0 "></mat-paginator>
+<p class="info-text mat-body-1" *ngIf="posts.length <= 0 && !isLoading">NO posts added yet!</p>
+ 

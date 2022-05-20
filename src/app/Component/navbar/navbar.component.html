@@ -1,0 +1,21 @@
+<mat-toolbar class="navBar">
+    <div class="navbar-brand" href="#">
+      <!-- <img
+        src="http://test.ultralinx.co/wp-content/uploads/2020/03/40_6.png"
+        alt="img"
+      /> -->
+      <span class="WebsiteName">College Quora</span>
+    </div>
+   
+  
+    <div class="navPages">
+      <a mat-button class="buttonIcon" routerLink="home" routerLinkActive="mat-accent">Home</a>
+      <a mat-button class="buttonIcon" routerLink="create" *ngIf="userIsAuthenticated">Ask your Queries</a>
+      <a mat-button class="buttonIcon" routerLink="profile">Profile</a>
+      <a mat-button class="buttonIcon" routerLink="about">About us</a>
+      <a mat-button class="buttonIcon" routerLink="login" routerLinkActive="mat-accent" *ngIf="!userIsAuthenticated">Login</a>
+      <a mat-button class="buttonIcon" routerLink="signup" routerLinkActive="mat-accent" *ngIf="!userIsAuthenticated">Sign-up</a>
+      <button mat-raised-button class="buttonIcon" *ngIf="userIsAuthenticated" (click)="OnLogout()">Logout</button>
+    </div>
+  </mat-toolbar>
+  
